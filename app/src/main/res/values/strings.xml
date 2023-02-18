@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">UsoCamara</string>
+    <string name="app_name">Uso Camara</string>
+    <string name="text_view_title">Gestión de Fotos</string>
+    <string name="button_tomar_foto">Tomar Foto</string>
+    <string name="text_view_enviar">Enviar a través de</string>
+    <string name="button_send_correo">Correo</string>
+    <string name="button_send_whatsapp">WhatsApp</string>
 </resources>
