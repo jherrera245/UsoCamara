@@ -38,14 +38,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewPicture"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonTakePicture"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/ic_imagen" />
 
     <TextView
         android:id="@+id/textViewEnviar"
@@ -59,37 +59,40 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPicture" />
 
     <ImageButton
         android:id="@+id/imageButtonSendWhatsApp"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:adjustViewBounds="true"
-        android:backgroundTint="#00FFFFFF"
+        android:backgroundTint="#25D266"
         android:contentDescription="Send from Whatsapp"
         android:scaleType="fitCenter"
         android:soundEffectsEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewEnviar"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/ic_whatsapp" />
 
     <ImageButton
         android:id="@+id/imageButtonSendEmail"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:adjustViewBounds="true"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="Send  from Email"
+        android:backgroundTint="#F74437"
+        android:contentDescription="Send from Email"
         android:scaleType="fitCenter"
         android:soundEffectsEnabled="true"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButtonSendWhatsApp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButtonSendWhatsApp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnviar"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/ic_email" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
